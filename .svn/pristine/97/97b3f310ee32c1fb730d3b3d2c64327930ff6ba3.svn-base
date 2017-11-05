@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>运营管理平台 - 拉勾网</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- 必须的css -->
+		<link href="__PUBLIC__/Admin/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="__PUBLIC__/Admin/css/bootstrap-responsive.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="__PUBLIC__/Admin/css/font-awesome.min.css" />
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="__PUBLIC__/Admin/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="__PUBLIC__/Admin/css/ace-fonts.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Admin/css/jquery-ui-1.10.3.full.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Admin/css/ace.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Admin/css/ace-responsive.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Admin/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Admin/css/lagou.admin.css" />
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="__PUBLIC__/Admin/css/ace-ie.min.css" />
+		<![endif]-->
+        <link rel="stylesheet" href="__PUBLIC__/Admin/css/bootstrap-timepicker.css" />
+        <link rel="stylesheet" href="__PUBLIC__/Admin/css/datepicker.css" />
+        <link rel="stylesheet" href="__PUBLIC__/Admin/css/lagou.global.css" />
+		<!-- /必须的css -->
+		
+		
+		<script src="__PUBLIC__/Admin/js/ace-extra.min.js"></script>
+	</head>
+
+	<body>
+	<include file="Common/header" />
+
+				<div class="page-content">
+
+<div class="row-fluid">
+	<h3 class="header blue lighter smaller">
+		<form action="/admin/company/index.html" method="get">
+		<div class="row-fluid  dataTables_wrapper">
+			<a class="btn btn-small btn-success" onclick="history.go(-1);">返回上一级</a>
+		</div>
+		</form>
+	</h3>
+	<div class="table-header">职位列表</div>
+	<table id="data_table" class="table table-striped table-bordered table-hover" style="margin-bottom:0px;">
+		<thead>
+			<tr>
+				<th>职位名称</th>
+				<th>所属部门</th>
+				<th>薪资（最高-最低）</th>
+				<th>所在城市</th>
+				<th>工作经验</th>
+				<th>学历</th>
+				<th>工作性质</th>
+				<th>福利</th>
+				<th>职位描述</th>
+				<th>创建时间</th>
+				<th>更新时间</th>
+				<th>状态</th>
+				<th width="8%">操作</th>
+			</tr>
+		</thead>
+
+		<tbody>
+							<tr>
+					<td>PHP</td>
+					<td>技术</td>
+					<td>15 - 10</td>
+					<td>北京</td>
+					<td>3-5年</td>
+					<td>大专</td>
+					<td>全职</td>
+					<td>福利好,待遇好,美女多</td>
+					<td>PHP程序员的岗位职责
+
+　　1、负责协助技术总监进行技术评测，bug处理，代码开发;
+
+　　2、负责网站数据库、栏目、程序模块的设计与开发;
+
+　　3、负责根据公司要求进行erp、oa、crm系统等项目开发;
+
+　　4、定期与培训部和测试部沟通，获取反馈信息并进行相应的处理;
+
+　　5、按时按质完成公司下达程度开发、系统评测等工作任务;
+
+　　6、定期维护网站程序，处理反馈回来的系统bug;
+
+　　7、网站程序开发文档的编写。</td>
+					<td>2014-11-15 09:29</td>
+					<td>2014-11-15 09:29</td>
+					<td>
+													正常
+											</td>
+					<td>
+						<div class="hidden-phone visible-desktop action-buttons">
+															<a href="javascript:;" class="red tooltip-info no-hover-underline" data-rel="tooltip" data-original-title="禁用" onclick="$.check('/admin/company_job/deny/id/4.html');">
+									<i class="icon-legal bigger-130"></i>
+								</a>
+													</div>
+					</td>
+				</tr>
+							<tr>
+					<td>招商经理</td>
+					<td>技术部</td>
+					<td>8 - 5</td>
+					<td>广州</td>
+					<td>3-5年 </td>
+					<td>本科</td>
+					<td>全职</td>
+					<td>前景大，晋升空间大，福利好，有期权</td>
+					<td><p>1.&nbsp;根据公司业务发展需要制定合作伙伴计划、寻找优质合作伙伴；</p>
+<p>2.&nbsp;根据市场变化及公司产品项目制定销售计划及开发目标；</p>
+<p>3.&nbsp;按计划开拓新渠道，招优质代理商</p>
+<p>4.&nbsp;维护老渠道并开发机构及个人大客户；</p>
+<p>5.&nbsp;与合适的合作伙伴进行商务洽谈、达成业务合作；</p>
+<p>6.&nbsp;全面掌握公司发行的各种互联网法律产品，向客户及发行渠道推介公司法律产品，完成发行计划。</p></td>
+					<td>2014-11-16 21:19</td>
+					<td>2014-11-16 21:19</td>
+					<td>
+													正常
+											</td>
+					<td>
+						<div class="hidden-phone visible-desktop action-buttons">
+															<a href="javascript:;" class="red tooltip-info no-hover-underline" data-rel="tooltip" data-original-title="禁用" onclick="$.check('/admin/company_job/deny/id/5.html');">
+									<i class="icon-legal bigger-130"></i>
+								</a>
+													</div>
+					</td>
+				</tr>
+							<tr>
+					<td>UI</td>
+					<td>技术部</td>
+					<td>20 - 10</td>
+					<td>北京</td>
+					<td>1-3年 </td>
+					<td>本科</td>
+					<td>全职</td>
+					<td>期权 干股 包吃住 给力工资</td>
+					<td><p>做过社交类产品的UI &nbsp;最好交互也做过</p>
+<p>1—3年经验</p>
+<p>有插画美术功底优先</p>
+<p>玩熟PS AI VS Axure</p>
+<p>我们希望你是最潮的UI</p>
+<p>最有想法和创意</p>
+<p>国际化设计视野</p>
+<p>附带作品</p>
+<p>&nbsp;玩兔在努力做下一代社交产品</p></td>
+					<td>2014-11-16 21:19</td>
+					<td>2014-11-16 21:19</td>
+					<td>
+													正常
+											</td>
+					<td>
+						<div class="hidden-phone visible-desktop action-buttons">
+															<a href="javascript:;" class="red tooltip-info no-hover-underline" data-rel="tooltip" data-original-title="禁用" onclick="$.check('/admin/company_job/deny/id/299.html');">
+									<i class="icon-legal bigger-130"></i>
+								</a>
+													</div>
+					</td>
+				</tr>
+							<tr>
+					<td>测试工程师</td>
+					<td>技术部</td>
+					<td>15 - 8</td>
+					<td>上海</td>
+					<td>3-5年 </td>
+					<td>本科</td>
+					<td>全职</td>
+					<td>母公司在中国500强排名200位</td>
+					<td><p>工作职责：<br>1.根据需求进行需求分析,然后设计和编写测试用例；<br>2.准备测试所需环境，自主开展测试工作，跟踪验证缺陷的修复情况；<br>3.进行Web,iOS,&nbsp;App等产品的测试；<br>4.参与智能硬件，可穿戴类产品的产品定义，从QA角度，给出产品建议，设计测试用例；<br>5.承担部分产品助理和项目助理工作；<br><br>职位要求：<br>1.计算机、通信类相关专业专科以上学历；<br>2.良好的沟通能力，有强烈的责任心；<br>3.具有团队合作精神，有一定的抗压能力；&nbsp;<br>4.掌握软件工程思想和方法，熟悉软件开发流程，测试流程；<br>5.优秀的测试用例分析及设计能力；<br>6.熟练掌握界面测试、功能测试、性能测试等的流程、方法和规范，能够独立编写测试计划和测试用例；<br>7.有大型软件项目或产品测试经验优先；</p></td>
+					<td>2014-11-16 21:19</td>
+					<td>2014-11-16 21:19</td>
+					<td>
+													正常
+											</td>
+					<td>
+						<div class="hidden-phone visible-desktop action-buttons">
+															<a href="javascript:;" class="red tooltip-info no-hover-underline" data-rel="tooltip" data-original-title="禁用" onclick="$.check('/admin/company_job/deny/id/602.html');">
+									<i class="icon-legal bigger-130"></i>
+								</a>
+													</div>
+					</td>
+				</tr>
+							<tr>
+					<td>CSS3</td>
+					<td>技术</td>
+					<td>5 - 3</td>
+					<td>北京</td>
+					<td>1-3年</td>
+					<td>本科</td>
+					<td>全职</td>
+					<td>福利待遇好</td>
+					<td>&lt;p&gt;dssdjkdjlkdjkldjklfdjkfdhgyierjrehfdijduydjdu&lt;br/&gt;&lt;/p&gt;</td>
+					<td>2014-11-17 22:21</td>
+					<td>2014-11-17 22:21</td>
+					<td>
+													正常
+											</td>
+					<td>
+						<div class="hidden-phone visible-desktop action-buttons">
+															<a href="javascript:;" class="red tooltip-info no-hover-underline" data-rel="tooltip" data-original-title="禁用" onclick="$.check('/admin/company_job/deny/id/767.html');">
+									<i class="icon-legal bigger-130"></i>
+								</a>
+													</div>
+					</td>
+				</tr>
+							<tr>
+					<td>JAVA</td>
+					<td>技术</td>
+					<td>5 - 3</td>
+					<td>北京</td>
+					<td>不限</td>
+					<td>本科</td>
+					<td>全职</td>
+					<td>是否的高度</td>
+					<td>是的规划图巨额额XDJJBNMTY</td>
+					<td>2014-11-18 11:07</td>
+					<td>2014-11-18 11:07</td>
+					<td>
+													正常
+											</td>
+					<td>
+						<div class="hidden-phone visible-desktop action-buttons">
+															<a href="javascript:;" class="red tooltip-info no-hover-underline" data-rel="tooltip" data-original-title="禁用" onclick="$.check('/admin/company_job/deny/id/768.html');">
+									<i class="icon-legal bigger-130"></i>
+								</a>
+													</div>
+					</td>
+				</tr>
+					</tbody>
+	</table>
+	<!-- 分页 -->
+	<div class="row-fluid">
+		<div class="page"><div>    </div></div>
+	</div>
+</div>
+
+				</div><!--/.page-content-->
+
+				<!-- 右侧悬浮的设置按钮,去掉好像会引起js报错 -->
+				<div class="ace-settings-container hide" id="ace-settings-container">
+					<div class="btn btn-app btn-mini btn-warning ace-settings-btn" id="ace-settings-btn">
+						<i class="icon-cog bigger-150"></i>
+					</div>
+
+					<div class="ace-settings-box" id="ace-settings-box">
+						<div>
+							<div class="pull-left">
+								<select id="skin-colorpicker" class="hide">
+									<option data-skin="default" value="#438EB9">#438EB9</option>
+									<option data-skin="skin-1" value="#222A2D">#222A2D</option>
+									<option data-skin="skin-2" value="#C6487E">#C6487E</option>
+									<option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+								</select>
+							</div>
+							<span>&nbsp; Choose Skin</span>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-navbar" />
+							<label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-sidebar" />
+							<label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-breadcrumbs" />
+							<label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" />
+							<label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+						</div>
+					</div>
+				</div>
+				<!-- /右侧悬浮的设置按钮,去掉好像会引起js报错 -->
+			</div>
+		</div>
+
+		<!-- 回到顶部 -->
+		<a href="###" id="btn-scroll-up" class="btn-scroll-up btn btn-small btn-inverse">
+			<i class="icon-double-angle-up icon-only bigger-110"></i>
+		</a>
+		<!-- /回到顶部 -->
+
+		<!-- 操作后提示框 -->
+		<div id="lg-alert" class="hide" style="margin-bottom:-1.5em;"></div>
+		<!--modal表单弹出框-->
+		<form id="lg-form" class="modal fade hide form-horizontal" method="post" tabindex="-1" enctype="multipart/form-data" onsubmit="return false;"></form>
+
+		<!-- 基础js部分 -->
+		<script src='__PUBLIC__/Admin/js/jquery-1.10.2.min.js'></script>
+		<script src='__PUBLIC__/Admin/js/jquery.mobile.custom.min.js'></script>
+		
+		<script src="__PUBLIC__/Admin/js/jquery-ui-1.10.3.full.min.js"></script>
+		<script src="__PUBLIC__/Admin/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>
+		<script src="__PUBLIC__/Admin/js/ace-elements.min.js"></script>
+		<script src="__PUBLIC__/Admin/js/ace.min.js"></script>
+		
+		<script src="__PUBLIC__/Admin/js/jquery.dataTables.min.js"></script>
+		<script src="__PUBLIC__/Admin/js/jquery.dataTables.bootstrap.js"></script>
+		<script src="__PUBLIC__/Admin/lagou/lagou.global.js"></script>
+		<script src="__PUBLIC__/Admin/js/jquery.inputlimiter.1.3.1.min.js"></script>
+
+		<!-- /基础js部分 -->
+		<script type="text/javascript">
+		jQuery(function($){
+			try{
+				ace.settings.navbar_fixed(true);
+				ace.settings.sidebar_fixed(true);
+				ace.settings.breadcrumbs_fixed(true);
+			}catch(e){}
+			
+			$('[data-rel=tooltip]').tooltip();
+			$('[data-rel=popover]').popover({html:true});
+
+		});	
+		</script>
+		
+
+		
+		
+	<script type="text/javascript">
+			jQuery(function($) {
+
+				// 这就是全选按钮
+				$('table th input:checkbox').on('click' , function(){
+					var that = this;
+					$(this).closest('table').find('tr > td:first-child input:checkbox')
+					.each(function(){
+						this.checked = that.checked;
+						$(this).closest('tr').toggleClass('selected');
+					});	
+				});
+
+
+				$.extend({
+
+					check : function(url)
+					{
+						$.lagou.confirm('确认执行操作么？', function(res){
+							if (res) {
+								$.get(url, function(response){
+									$.lagou.alert(response.msg, response.code, 2);
+									location.reload(0);
+								});
+							}
+						});
+					}
+				});
+			
+			})
+		</script>
+
+	</body>
+</html>

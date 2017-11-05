@@ -1,0 +1,61 @@
+<?php
+//声明命名空间
+namespace Admin\Controller;
+//引入控制器父类
+use Think\Controller;
+//定义当前控制器类
+class CompanyJobController extends CommonController{
+    public function index()
+    {
+        $data = I('get.');
+
+        $job = D('Job')->where(array('company_id' => $data['id']))->select();
+
+        if ($job !== false) {
+            $this->assign('job', $job);
+            $this->display();
+        } else {
+            $this->error('查询失败');
+        }
+    }
+
+    public function deny(){
+        $data=I('get.');
+        $res = D('Job') -> where(array(['id'=> $data['id']])) ->find();
+        if($res !== false){
+            $data['state'] =0;
+            $qes=D('Job') -> save($data);
+            if($qes !== false){
+                $msg['code'] = 1;
+                $msg['msg'] = '已关闭';
+
+            }else{
+                $msg['code'] = 0;
+                $msg['msg'] = '操作失败';
+            }
+            $this->ajaxReturn($msg);
+        }else{
+            $this ->error('数据操作失败');
+        }
+    }
+
+    public function receive(){
+        $data=I('get.');
+        $res = D('Job') -> where(array(['id'=> $data['id']])) ->find();
+        if($res !== false){
+            $data['state'] =1;
+            $qes=D('Job') -> save($data);
+            if($qes !== false){
+                $msg['code'] = 1;
+                $msg['msg'] = '启用成功';
+
+            }else{
+                $msg['code'] = 0;
+                $msg['msg'] = '操作失败';
+            }
+            $this->ajaxReturn($msg);
+        }else{
+            $this ->error('数据操作失败');
+        }
+    }
+}

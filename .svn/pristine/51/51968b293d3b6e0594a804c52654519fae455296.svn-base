@@ -1,0 +1,2115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>运营管理平台 - 拉勾网</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 必须的css -->
+    <link href="__PUBLIC__/Admin/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="__PUBLIC__/Admin/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/font-awesome.min.css" />
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/font-awesome-ie7.min.css" />
+    <![endif]-->
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/ace-fonts.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/jquery-ui-1.10.3.full.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/ace.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/ace-responsive.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/lagou.admin.css" />
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/ace-ie.min.css" />
+    <![endif]-->
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/bootstrap-timepicker.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/datepicker.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/lagou.global.css" />
+    <!-- /必须的css -->
+
+
+    <script src="__PUBLIC__/Admin/js/ace-extra.min.js"></script>
+</head>
+
+<body>
+<!-- 头部 -->
+<include file="Common/header" />
+
+        <div class="page-content">
+
+            <div class="row-fluid">
+                <div class="span6">
+                    <div id="nestable" class="dd">
+                        <ol class="dd-list">
+                            <li class="dd-item" data-id="1">
+                                <div class="dd-handle">
+                                    技术					</div>
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="7">
+                                        <div class="dd-handle">
+                                            前端开发							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="9">
+                                                <div class="dd-handle">
+                                                    Javascript1111										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/9.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="10">
+                                                <div class="dd-handle">
+                                                    UI										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/10.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="53">
+                                                <div class="dd-handle">
+                                                    CSS3										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/53.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="72">
+                                                <div class="dd-handle">
+                                                    web前端										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/72.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="73">
+                                                <div class="dd-handle">
+                                                    flash										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/73.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="74">
+                                                <div class="dd-handle">
+                                                    U3D										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/74.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="75">
+                                                <div class="dd-handle">
+                                                    COCOS2D-X										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/75.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="11">
+                                        <div class="dd-handle">
+                                            后端开发							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="12">
+                                                <div class="dd-handle">
+                                                    PHP										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/12.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="13">
+                                                <div class="dd-handle">
+                                                    JAVA										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/13.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="14">
+                                                <div class="dd-handle">
+                                                    C										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/14.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="15">
+                                                <div class="dd-handle">
+                                                    C++										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/15.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="76">
+                                                <div class="dd-handle">
+                                                    数据挖掘										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/76.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="77">
+                                                <div class="dd-handle">
+                                                    .NET										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/77.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="78">
+                                                <div class="dd-handle">
+                                                    Python										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/78.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="79">
+                                                <div class="dd-handle">
+                                                    ASP										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/79.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="80">
+                                                <div class="dd-handle">
+                                                    Ruby										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/80.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="18">
+                                        <div class="dd-handle">
+                                            移动开发							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="8">
+                                                <div class="dd-handle">
+                                                    HTML5										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/8.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="19">
+                                                <div class="dd-handle">
+                                                    IOS										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/19.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="20">
+                                                <div class="dd-handle">
+                                                    WP										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/20.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="21">
+                                                <div class="dd-handle">
+                                                    Android										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/21.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="54">
+                                        <div class="dd-handle">
+                                            硬件开发							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="81">
+                                                <div class="dd-handle">
+                                                    嵌入式										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/81.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="82">
+                                                <div class="dd-handle">
+                                                    自动化										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/82.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="83">
+                                                <div class="dd-handle">
+                                                    单片机										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/83.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="84">
+                                                <div class="dd-handle">
+                                                    电路设计										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/84.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="85">
+                                                <div class="dd-handle">
+                                                    驱动开发										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/85.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="86">
+                                                <div class="dd-handle">
+                                                    系统集成										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/86.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="87">
+                                                <div class="dd-handle">
+                                                    PCB工艺										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/87.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="88">
+                                                <div class="dd-handle">
+                                                    模具设计										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/88.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="89">
+                                                <div class="dd-handle">
+                                                    热传导										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/89.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="90">
+                                                <div class="dd-handle">
+                                                    精益工程师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/90.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="91">
+                                                <div class="dd-handle">
+                                                    ARM开发										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/91.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="55">
+                                        <div class="dd-handle">
+                                            测试							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="92">
+                                                <div class="dd-handle">
+                                                    测试工程师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/92.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="93">
+                                                <div class="dd-handle">
+                                                    自动化测试										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/93.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="94">
+                                                <div class="dd-handle">
+                                                    功能测试										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/94.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="95">
+                                                <div class="dd-handle">
+                                                    项目测试										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/95.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="96">
+                                                <div class="dd-handle">
+                                                    测试开发										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/96.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="97">
+                                                <div class="dd-handle">
+                                                    游戏测试										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/97.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="98">
+                                                <div class="dd-handle">
+                                                    白盒测试										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/98.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="99">
+                                                <div class="dd-handle">
+                                                    灰盒测试										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/99.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="100">
+                                                <div class="dd-handle">
+                                                    黑盒测试										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/100.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="101">
+                                                <div class="dd-handle">
+                                                    手机测试										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/101.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="56">
+                                        <div class="dd-handle">
+                                            运维							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="102">
+                                                <div class="dd-handle">
+                                                    运维工程师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/102.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="103">
+                                                <div class="dd-handle">
+                                                    运维开发工程师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/103.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="104">
+                                                <div class="dd-handle">
+                                                    网络工程师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/104.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="105">
+                                                <div class="dd-handle">
+                                                    系统工程师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/105.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="106">
+                                                <div class="dd-handle">
+                                                    IT支持										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/106.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="107">
+                                                <div class="dd-handle">
+                                                    IDC										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/107.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="108">
+                                                <div class="dd-handle">
+                                                    CDN										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/108.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="109">
+                                                <div class="dd-handle">
+                                                    系统管理员										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/109.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="110">
+                                                <div class="dd-handle">
+                                                    病毒分析										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/110.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="57">
+                                        <div class="dd-handle">
+                                            DBA							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="111">
+                                                <div class="dd-handle">
+                                                    MySQL										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/111.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="112">
+                                                <div class="dd-handle">
+                                                    SQLServer										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/112.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="113">
+                                                <div class="dd-handle">
+                                                    Oracle										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/113.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="114">
+                                                <div class="dd-handle">
+                                                    DB2										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/114.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="115">
+                                                <div class="dd-handle">
+                                                    MongoDB										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/115.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="116">
+                                                <div class="dd-handle">
+                                                    ETL										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/116.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="117">
+                                                <div class="dd-handle">
+                                                    Hive										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/117.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="118">
+                                                <div class="dd-handle">
+                                                    数据仓库										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/118.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="58">
+                                        <div class="dd-handle">
+                                            项目管理							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="119">
+                                                <div class="dd-handle">
+                                                    项目经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/119.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="120">
+                                                <div class="dd-handle">
+                                                    项目助理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/120.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="59">
+                                        <div class="dd-handle">
+                                            高端职位							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="125">
+                                                <div class="dd-handle">
+                                                    技术经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/125.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="126">
+                                                <div class="dd-handle">
+                                                    技术总监										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/126.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="127">
+                                                <div class="dd-handle">
+                                                    测试经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/127.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="128">
+                                                <div class="dd-handle">
+                                                    架构师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/128.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="129">
+                                                <div class="dd-handle">
+                                                    CTO										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/129.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="130">
+                                                <div class="dd-handle">
+                                                    运维总监										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/130.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="131">
+                                                <div class="dd-handle">
+                                                    项目总监										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/131.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="132">
+                                                <div class="dd-handle">
+                                                    测试总监										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/132.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="60">
+                                        <div class="dd-handle">
+                                            企业软件							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="121">
+                                                <div class="dd-handle">
+                                                    实施工程师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/121.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="122">
+                                                <div class="dd-handle">
+                                                    售前工程师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/122.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="123">
+                                                <div class="dd-handle">
+                                                    售后工程师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/123.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="124">
+                                                <div class="dd-handle">
+                                                    BI工程师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/124.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="dd-item" data-id="2">
+                                <div class="dd-handle">
+                                    产品					</div>
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="22">
+                                        <div class="dd-handle">
+                                            产品经理							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="23">
+                                                <div class="dd-handle">
+                                                    产品助理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/23.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="133">
+                                                <div class="dd-handle">
+                                                    产品经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/133.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="134">
+                                                <div class="dd-handle">
+                                                    网页产品经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/134.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="135">
+                                                <div class="dd-handle">
+                                                    移动产品经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/135.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="136">
+                                                <div class="dd-handle">
+                                                    数据产品助理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/136.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="137">
+                                                <div class="dd-handle">
+                                                    游戏策划										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/137.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="138">
+                                                <div class="dd-handle">
+                                                    产品实习生										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/138.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="61">
+                                        <div class="dd-handle">
+                                            产品设计							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="139">
+                                                <div class="dd-handle">
+                                                    产品设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/139.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="140">
+                                                <div class="dd-handle">
+                                                    网页产品设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/140.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="141">
+                                                <div class="dd-handle">
+                                                    无限产品设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/141.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="62">
+                                        <div class="dd-handle">
+                                            高端职位							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="142">
+                                                <div class="dd-handle">
+                                                    产品部经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/142.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="143">
+                                                <div class="dd-handle">
+                                                    产品总监										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/143.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="144">
+                                                <div class="dd-handle">
+                                                    游戏制作人										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/144.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="dd-item" data-id="3">
+                                <div class="dd-handle">
+                                    设计					</div>
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="24">
+                                        <div class="dd-handle">
+                                            视觉设计							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="25">
+                                                <div class="dd-handle">
+                                                    视觉设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/25.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="145">
+                                                <div class="dd-handle">
+                                                    视觉设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/145.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="146">
+                                                <div class="dd-handle">
+                                                    网页设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/146.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="147">
+                                                <div class="dd-handle">
+                                                    Flash设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/147.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="148">
+                                                <div class="dd-handle">
+                                                    APP设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/148.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="149">
+                                                <div class="dd-handle">
+                                                    UI设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/149.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="150">
+                                                <div class="dd-handle">
+                                                    平面设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/150.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="151">
+                                                <div class="dd-handle">
+                                                    美术设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/151.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="26">
+                                        <div class="dd-handle">
+                                            交互设计							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="27">
+                                                <div class="dd-handle">
+                                                    交互设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/27.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="152">
+                                                <div class="dd-handle">
+                                                    交互设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/152.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="153">
+                                                <div class="dd-handle">
+                                                    无线交互设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/153.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="154">
+                                                <div class="dd-handle">
+                                                    网页交互设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/154.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="155">
+                                                <div class="dd-handle">
+                                                    硬件交互设计师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/155.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="63">
+                                        <div class="dd-handle">
+                                            用户研究							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="156">
+                                                <div class="dd-handle">
+                                                    数据分析师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/156.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="157">
+                                                <div class="dd-handle">
+                                                    用户研究员										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/157.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="158">
+                                                <div class="dd-handle">
+                                                    游戏数值策划										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/158.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="64">
+                                        <div class="dd-handle">
+                                            高端职位							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="159">
+                                                <div class="dd-handle">
+                                                    设计总监										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/159.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="160">
+                                                <div class="dd-handle">
+                                                    视觉设计总监										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/160.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="161">
+                                                <div class="dd-handle">
+                                                    交互设计总监										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/161.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="180">
+                                                <div class="dd-handle">
+                                                    运营总监										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/180.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="dd-item" data-id="4">
+                                <div class="dd-handle">
+                                    运营					</div>
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="28">
+                                        <div class="dd-handle">
+                                            运营							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="29">
+                                                <div class="dd-handle">
+                                                    用户运营										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/29.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="30">
+                                                <div class="dd-handle">
+                                                    产品运营										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/30.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="162">
+                                                <div class="dd-handle">
+                                                    用户运营										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/162.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="163">
+                                                <div class="dd-handle">
+                                                    产品运营										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/163.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="164">
+                                                <div class="dd-handle">
+                                                    数据运营										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/164.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="165">
+                                                <div class="dd-handle">
+                                                    内容运营										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/165.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="166">
+                                                <div class="dd-handle">
+                                                    活动运营										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/166.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="167">
+                                                <div class="dd-handle">
+                                                    商家运营										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/167.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="168">
+                                                <div class="dd-handle">
+                                                    游戏运营										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/168.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="169">
+                                                <div class="dd-handle">
+                                                    网店运营										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/169.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="170">
+                                                <div class="dd-handle">
+                                                    海外运营										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/170.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="31">
+                                        <div class="dd-handle">
+                                            编辑							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="32">
+                                                <div class="dd-handle">
+                                                    副编辑										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/32.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="33">
+                                                <div class="dd-handle">
+                                                    主编辑										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/33.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="171">
+                                                <div class="dd-handle">
+                                                    副编辑										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/171.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="172">
+                                                <div class="dd-handle">
+                                                    内容编辑										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/172.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="173">
+                                                <div class="dd-handle">
+                                                    文案策划										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/173.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="174">
+                                                <div class="dd-handle">
+                                                    记者										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/174.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="65">
+                                        <div class="dd-handle">
+                                            客服							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="175">
+                                                <div class="dd-handle">
+                                                    售前咨询										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/175.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="176">
+                                                <div class="dd-handle">
+                                                    售后客服										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/176.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="177">
+                                                <div class="dd-handle">
+                                                    淘宝客服										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/177.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="178">
+                                                <div class="dd-handle">
+                                                    客服经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/178.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="66">
+                                        <div class="dd-handle">
+                                            高端职位							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="179">
+                                                <div class="dd-handle">
+                                                    主编										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/179.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="181">
+                                                <div class="dd-handle">
+                                                    客服总监										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/181.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="dd-item" data-id="5">
+                                <div class="dd-handle">
+                                    市场与销售					</div>
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="34">
+                                        <div class="dd-handle">
+                                            市场与营销							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="35">
+                                                <div class="dd-handle">
+                                                    市场营销										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/35.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="182">
+                                                <div class="dd-handle">
+                                                    市场营销										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/182.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="183">
+                                                <div class="dd-handle">
+                                                    市场策划										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/183.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="184">
+                                                <div class="dd-handle">
+                                                    市场顾问										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/184.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="185">
+                                                <div class="dd-handle">
+                                                    市场推广										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/185.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="186">
+                                                <div class="dd-handle">
+                                                    SEO										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/186.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="187">
+                                                <div class="dd-handle">
+                                                    SEM										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/187.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="188">
+                                                <div class="dd-handle">
+                                                    商务渠道										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/188.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="189">
+                                                <div class="dd-handle">
+                                                    商业数据分析										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/189.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="190">
+                                                <div class="dd-handle">
+                                                    活动策划										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/190.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="191">
+                                                <div class="dd-handle">
+                                                    海外市场										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/191.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="192">
+                                                <div class="dd-handle">
+                                                    政府关系										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/192.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="36">
+                                        <div class="dd-handle">
+                                            公关							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="37">
+                                                <div class="dd-handle">
+                                                    媒介经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/37.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="193">
+                                                <div class="dd-handle">
+                                                    媒介经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/193.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="194">
+                                                <div class="dd-handle">
+                                                    广告协调										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/194.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="195">
+                                                <div class="dd-handle">
+                                                    品牌公关										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/195.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="38">
+                                        <div class="dd-handle">
+                                            销售							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="39">
+                                                <div class="dd-handle">
+                                                    销售专员										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/39.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="40">
+                                                <div class="dd-handle">
+                                                    销售经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/40.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="196">
+                                                <div class="dd-handle">
+                                                    客户代表										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/196.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="197">
+                                                <div class="dd-handle">
+                                                    BD经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/197.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="198">
+                                                <div class="dd-handle">
+                                                    代理商销售										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/198.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="199">
+                                                <div class="dd-handle">
+                                                    电话销售										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/199.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="200">
+                                                <div class="dd-handle">
+                                                    销售顾问										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/200.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="201">
+                                                <div class="dd-handle">
+                                                    商品经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/201.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="67">
+                                        <div class="dd-handle">
+                                            供应链							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="202">
+                                                <div class="dd-handle">
+                                                    物流										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/202.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="203">
+                                                <div class="dd-handle">
+                                                    仓储										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/203.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="68">
+                                        <div class="dd-handle">
+                                            采购							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="204">
+                                                <div class="dd-handle">
+                                                    采购专员										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/204.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="205">
+                                                <div class="dd-handle">
+                                                    采购经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/205.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="206">
+                                                <div class="dd-handle">
+                                                    商品经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/206.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="69">
+                                        <div class="dd-handle">
+                                            投资							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="207">
+                                                <div class="dd-handle">
+                                                    分析师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/207.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="208">
+                                                <div class="dd-handle">
+                                                    投资顾问										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/208.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="209">
+                                                <div class="dd-handle">
+                                                    投资经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/209.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="70">
+                                        <div class="dd-handle">
+                                            高端职位							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="210">
+                                                <div class="dd-handle">
+                                                    市场总监										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/210.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="211">
+                                                <div class="dd-handle">
+                                                    销售总监										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/211.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="212">
+                                                <div class="dd-handle">
+                                                    商务总监										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/212.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="213">
+                                                <div class="dd-handle">
+                                                    公关总监										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/213.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="dd-item" data-id="6">
+                                <div class="dd-handle">
+                                    职能					</div>
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="41">
+                                        <div class="dd-handle">
+                                            人力资源							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="42">
+                                                <div class="dd-handle">
+                                                    人力资源										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/42.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="43">
+                                                <div class="dd-handle">
+                                                    招聘										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/43.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="214">
+                                                <div class="dd-handle">
+                                                    培训经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/214.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="215">
+                                                <div class="dd-handle">
+                                                    薪资福利经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/215.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="216">
+                                                <div class="dd-handle">
+                                                    绩效考核经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/216.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="217">
+                                                <div class="dd-handle">
+                                                    员工关系										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/217.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="44">
+                                        <div class="dd-handle">
+                                            行政							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="45">
+                                                <div class="dd-handle">
+                                                    助力										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/45.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="46">
+                                                <div class="dd-handle">
+                                                    前台										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/46.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="218">
+                                                <div class="dd-handle">
+                                                    总助										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/218.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="219">
+                                                <div class="dd-handle">
+                                                    文秘										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/219.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="47">
+                                        <div class="dd-handle">
+                                            财务							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="48">
+                                                <div class="dd-handle">
+                                                    会计										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/48.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="49">
+                                                <div class="dd-handle">
+                                                    出纳										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/49.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="220">
+                                                <div class="dd-handle">
+                                                    财务										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/220.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="221">
+                                                <div class="dd-handle">
+                                                    结算										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/221.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="222">
+                                                <div class="dd-handle">
+                                                    税务										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/222.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="223">
+                                                <div class="dd-handle">
+                                                    审计										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/223.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="224">
+                                                <div class="dd-handle">
+                                                    风控										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/224.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="50">
+                                        <div class="dd-handle">
+                                            法务							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="51">
+                                                <div class="dd-handle">
+                                                    律师										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/51.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="52">
+                                                <div class="dd-handle">
+                                                    法务										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/52.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="225">
+                                                <div class="dd-handle">
+                                                    专利										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/225.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="71">
+                                        <div class="dd-handle">
+                                            高端职位							</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="226">
+                                                <div class="dd-handle">
+                                                    行政总监/经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/226.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="227">
+                                                <div class="dd-handle">
+                                                    财务总监/经理										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/227.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="228">
+                                                <div class="dd-handle">
+                                                    HRD/HRM										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/228.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="229">
+                                                <div class="dd-handle">
+                                                    CFO										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/229.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                            <li class="dd-item" data-id="230">
+                                                <div class="dd-handle">
+                                                    CEO										<div class="pull-right action-buttons">
+                                                    <a href="javascript:$.lagou.formShow('/admin/type/edit/id/230.html');" class="blue">
+                                                        <i class="icon-pencil bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="span1">
+                    <a class="btn btn-app btn-success" href="javascript:$.lagou.formShow('/admin/type/add.html');">
+                        <i class="icon-refresh bigger-230"></i>添加分类
+                    </a>
+                </div>
+            </div>
+
+        </div><!--/.page-content-->
+
+        <!-- 右侧悬浮的设置按钮,去掉好像会引起js报错 -->
+        <div class="ace-settings-container hide" id="ace-settings-container">
+            <div class="btn btn-app btn-mini btn-warning ace-settings-btn" id="ace-settings-btn">
+                <i class="icon-cog bigger-150"></i>
+            </div>
+
+            <div class="ace-settings-box" id="ace-settings-box">
+                <div>
+                    <div class="pull-left">
+                        <select id="skin-colorpicker" class="hide">
+                            <option data-skin="default" value="#438EB9">#438EB9</option>
+                            <option data-skin="skin-1" value="#222A2D">#222A2D</option>
+                            <option data-skin="skin-2" value="#C6487E">#C6487E</option>
+                            <option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+                        </select>
+                    </div>
+                    <span>&nbsp; Choose Skin</span>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-navbar" />
+                    <label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-sidebar" />
+                    <label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-breadcrumbs" />
+                    <label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" />
+                    <label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+                </div>
+            </div>
+        </div>
+        <!-- /右侧悬浮的设置按钮,去掉好像会引起js报错 -->
+    </div>
+</div>
+
+<!-- 回到顶部 -->
+<a href="###" id="btn-scroll-up" class="btn-scroll-up btn btn-small btn-inverse">
+    <i class="icon-double-angle-up icon-only bigger-110"></i>
+</a>
+<!-- /回到顶部 -->
+
+<!-- 操作后提示框 -->
+<div id="lg-alert" class="hide" style="margin-bottom:-1.5em;"></div>
+<!--modal表单弹出框-->
+<form id="lg-form" class="modal fade hide form-horizontal" method="post" tabindex="-1" enctype="multipart/form-data" onsubmit="return false;"></form>
+
+<!-- 基础js部分 -->
+<script src='__PUBLIC__/Admin/js/jquery-1.10.2.min.js'></script>
+<script src='__PUBLIC__/Admin/js/jquery.mobile.custom.min.js'></script>
+
+<script src="__PUBLIC__/Admin/js/jquery-ui-1.10.3.full.min.js"></script>
+<script src="__PUBLIC__/Admin/js/jquery.ui.touch-punch.min.js"></script>
+<script src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/Admin/js/ace-elements.min.js"></script>
+<script src="__PUBLIC__/Admin/js/ace.min.js"></script>
+
+<script src="__PUBLIC__/Admin/js/jquery.dataTables.min.js"></script>
+<script src="__PUBLIC__/Admin/js/jquery.dataTables.bootstrap.js"></script>
+<script src="__PUBLIC__/Admin/lagou/lagou.global.js"></script>
+<script src="__PUBLIC__/Admin/js/jquery.inputlimiter.1.3.1.min.js"></script>
+
+<!-- /基础js部分 -->
+<script type="text/javascript">
+    jQuery(function($){
+        try{
+            ace.settings.navbar_fixed(true);
+            ace.settings.sidebar_fixed(true);
+            ace.settings.breadcrumbs_fixed(true);
+        }catch(e){}
+
+        $('[data-rel=tooltip]').tooltip();
+        $('[data-rel=popover]').popover({html:true});
+
+    });
+</script>
+
+
+
+
+<script src="__PUBLIC__/Admin/js/jquery.dataTables.min.js"></script>
+<script src="__PUBLIC__/Admin/js/jquery.dataTables.bootstrap.js"></script>
+<script src="__PUBLIC__/Admin/js/jquery.nestable.min.js"></script>
+<script type="text/javascript">
+    jQuery(function($) {
+
+        $('.dd').nestable();
+
+        $('.dd-handle a').on('mousedown', function(e){
+            e.stopPropagation();
+        });
+
+
+        $.extend({
+
+            action : function(url, obj)
+            {
+                var obj = $(obj).parents('form');
+
+                $.ajax({
+                    url : url,
+                    type : 'post',
+                    data : obj.serialize(),
+                    success : function(res)
+                    {
+                        $.lagou.alert(res.msg, res.code, 2);
+                        $.lagou.formHide();
+                        location.reload();
+                    }
+                });
+            }
+        });
+    })
+</script>
+
+</body>
+</html>

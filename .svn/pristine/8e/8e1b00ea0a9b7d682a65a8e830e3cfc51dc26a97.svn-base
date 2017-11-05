@@ -1,0 +1,186 @@
+<!-- 头部 -->
+<div class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a href="#" class="brand">
+                <small>
+                    <i class="icon-comments"></i>
+                    拉勾网 - 运营管理平台
+                </small>
+            </a><!--/.brand-->
+
+            <ul class="nav ace-nav pull-right">
+
+                <li class="light-blue">
+                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                        <img class="nav-user-photo" src="{$Think.session.Admin_info.image}" alt="admin" />
+                        <span class="user-info">
+							<small>欢迎回来</small>
+							{$Think.session.Admin_info.username}						</span>
+
+                        <i class="icon-caret-down"></i>
+                    </a>
+
+                    <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer">
+                        <!-- <li>
+                            <a href="#">
+                                <i class="icon-cog"></i>
+                                修改信息
+                            </a>
+                        </li> -->
+
+                        <li>
+                            <a href="__MODULE__/Manager/editpwd">
+                                <i class="icon-lock"></i>
+                                修改密码
+                            </a>
+                        </li>
+
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="__MODULE__/Login/logout">
+                                <i class="icon-off"></i>
+                                退出
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul><!--/.ace-nav-->
+        </div><!--/.container-fluid-->
+    </div><!--/.navbar-inner-->
+</div>
+<!-- /头部 -->
+
+<div class="main-container container-fluid">
+    <a class="menu-toggler" id="menu-toggler" href="#">
+        <span class="menu-text"></span>
+    </a>
+
+    <!-- 左侧菜单 -->
+
+    <div class="sidebar" id="sidebar">
+        <ul class="nav nav-list">
+            <li class="active open">
+                <a href="__MODULE__/Index/index.html">
+                    <i class="icon-home"></i>
+                    <span class="menu-text"> 控制台 </span>
+                </a>
+            </li>
+
+            <li >
+                <a href="javascript:;" class="dropdown-toggle">
+                    <i class="icon-group"></i>
+                    <span class="menu-text">用户管理</span>
+                    <b class="arrow icon-angle-down"></b>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="__MODULE__/User/index.html">
+                            <i class="icon-double-angle-right"></i>
+                            会员列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li >
+                <a href="javascript:;" class="dropdown-toggle">
+                    <i class="icon-envelope-alt"></i>
+                    <span class="menu-text">公司信息管理</span>
+                    <b class="arrow icon-angle-down"></b>
+                </a>
+                <ul class="submenu">
+                    <li >
+                        <a href="__MODULE__/Company/index.html">
+                            <i class="icon-double-angle-right"></i>
+                            公司信息列表
+                        </a>
+                    </li>
+                    <li >
+                        <a href="__MODULE__/Company/apply.html">
+                            <i class="icon-double-angle-right"></i>
+                            申请认证公司列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li >
+                <a href="javascript:;" class="dropdown-toggle">
+                    <i class="icon-film"></i>
+                    <span class="menu-text">职位分类管理</span>
+                    <b class="arrow icon-angle-down"></b>
+                </a>
+                <ul class="submenu">
+                    <li >
+                        <a href="__MODULE__/Type/index.html">
+                            <i class="icon-double-angle-right"></i>
+                            全部分类列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li >
+                <a href="javascript:;" class="dropdown-toggle">
+                    <i class="icon-heart"></i>
+                    <span class="menu-text">友情连接管理</span>
+                    <b class="arrow icon-angle-down"></b>
+                </a>
+                <ul class="submenu">
+                    <li >
+                        <a href="__MODULE__/Link/index.html">
+                            <i class="icon-double-angle-right"></i>
+                            友情链接列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li >
+                <a href="javascript:;" class="dropdown-toggle">
+                    <i class="icon-legal"></i>
+                    <span class="menu-text">管理员管理</span>
+                    <b class="arrow icon-angle-down"></b>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href=__MODULE__/Manager/index.html>
+                            <i class="icon-double-angle-right"></i>
+                            管理员列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <div class="sidebar-collapse" id="sidebar-collapse">
+            <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+        </div>
+
+        <script type="text/javascript">
+            try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+        </script>
+    </div>
+
+    <!-- /左侧菜单 -->
+
+    <div class="main-content">
+        <!-- 面包屑导航 -->
+        <div class="breadcrumbs" id="breadcrumbs">
+            <ul class="breadcrumb">
+                <li>
+                    <i class="icon-home home-icon"></i>
+                    <a href="__MODULE__/Index/index.html">首页</a>
+                    <span class="divider">
+							<i class="icon-angle-right arrow-icon"></i>
+							</span>
+                </li>
+
+                <li class="active">控制台</li>
+
+            </ul>
+        </div>
+        <!-- /面包屑导航 -->

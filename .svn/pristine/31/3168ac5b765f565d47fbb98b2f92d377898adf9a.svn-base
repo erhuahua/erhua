@@ -1,0 +1,104 @@
+<?php
+//声明命名空间
+namespace Admin\Controller;
+//引入控制器父类
+use Think\Controller;
+//定义当前控制器类
+class CompanyController extends CommonController{
+    public function index(){
+        $data =D('Company')->select();
+        $this->assign('data',$data);
+        $this->display();
+    }
+
+    public function apply(){
+        $data= D('Company');
+        //获取users表的总记录数
+        $total = $data ->where('state = 3 OR state = 2')-> count();
+        //设置每页显示的记录数
+        $pagesize =15;
+        //实例化TP的分页类
+        $page = new \Think\Page($total, $pagesize);
+        //设置分页栏的显示
+        $page -> setConfig('prev','上一页');
+        $page -> setConfig('next','下一页');
+        $page -> setConfig('first','首页');
+        $page -> setConfig('last','尾页');
+        $page -> setConfig('theme','%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% %HEADER%');
+        $page -> rollPage = 10;//分页栏的栏目数
+        $page ->lastSuffix=true;
+        //调用show方法获取分页栏代码
+        $page_html =$page -> show();
+        $this-> assign('page_html',$page_html);
+        //查询数据
+
+        $model =$data -> limit($page -> firstRow, $page -> listRows) ->where('state = 3 OR state = 2') -> select();
+        //变量赋值
+        $this-> assign('model',$model);
+        $this-> display();
+
+    }
+    //申请认证公司 审核
+    public function check(){
+        $data=I('get.');
+        $res = D('Company') -> where(['id' => $data['id']]) ->find();
+        if($res !== false){
+            $data['state'] = 1;
+            $qes=D('Company') -> save($data);
+
+            if($qes !== false){
+                $msg['code'] = 1;
+                $msg['msg'] = '审核成功';
+
+            }else{
+                $msg['code'] = 0;
+                $msg['msg'] = '操作失败';
+            }
+            $this->ajaxReturn($msg);
+        }else{
+            $this->error('数据操作失败');
+        }
+    }
+
+
+    //禁用Company
+    public function deny(){
+        $data=I('get.');
+        $res = D('Company') -> where(array(['id'=> $data['id']])) ->find();
+        if($res !== false){
+            $data['state'] =0;
+            $qes=D('Company') -> save($data);
+            if($qes !== false){
+                $msg['code'] = 1;
+                $msg['msg'] = '禁用成功';
+
+            }else{
+                $msg['code'] = 0;
+                $msg['msg'] = '操作失败';
+            }
+            $this->ajaxReturn($msg);
+        }else{
+            $this ->error('数据操作失败');
+        }
+    }
+
+    //重新启用
+    public function receive(){
+        $data=I('get.');
+        $res = D('Company') -> where(array(['id'=> $data['id']])) ->find();
+        if($res !== false){
+            $data['state'] =1;
+            $qes=D('Company') -> save($data);
+            if($qes !== false){
+                $msg['code'] = 1;
+                $msg['msg'] = '启用成功';
+            }else{
+                $msg['code'] = 0;
+                $msg['msg'] = '操作失败';
+            }
+            $this->ajaxReturn($msg);
+        }else{
+            $this ->error('数据操作失败');
+        }
+    }
+}

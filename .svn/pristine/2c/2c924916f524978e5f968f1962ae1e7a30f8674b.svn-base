@@ -1,0 +1,42 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class IndexController extends Controller {
+    public function index(){
+        //查询职位类别表
+        //使用无限极分类
+        $cate_data = D('jobCategory') -> select();
+        $this->assign('cate_data',$cate_data);
+        //查询6个公司信息展示在页面上
+        $company_data = D('Company') -> limit(6) -> select();
+        $this->assign('company_data',$company_data);
+        //查询最新招聘信息  职位表-公司表-公司标签表-标签表
+        $job_msg = D('Job') ->field('t1.name jname,t1.email jemail,t1.company_id cid,t1.*,t2.name cname,t2.*,t3.*')-> alias('t1') -> join('left join lg_company as t2 on t1.company_id = t2.id left join lg_team as t3 on t1.company_id = t3.company_id') -> limit(10) ->order('t1.create_time desc') -> select();
+        $msg_new = array();
+        foreach($job_msg as $row){
+            $company_tag = D('company_tag') -> alias('t1') -> field('t2.name') -> join('left join lg_tag as t2 on t1.tag_id = t2.id') -> where("t1.company_id = {$row['cid']}") -> select();
+            $row['tag'] = $company_tag;
+            // $row['create_time'] = (integer)((time() - $row['create_time'])/(8440));
+            $row['create_time'] = mt_rand(1,20);
+            $msg_new[] = $row;
+        }
+        $this->assign('msg_new',$msg_new);
+        //查询最热招聘信息  职位表-公司表-公司标签表-标签表 
+         $job_msg = D('Job') ->field('t1.name jname,t1.email jemail,t1.company_id cid,t1.*,t2.name cname,t2.*,t3.*')-> alias('t1') -> join('left join lg_company as t2 on t1.company_id = t2.id left join lg_team as t3 on t1.company_id = t3.company_id') -> limit(10) -> select();
+        $msg_hot = array();
+        foreach($job_msg as $row){
+            $company_tag = D('company_tag') -> alias('t1') -> field('t2.name') -> join('left join lg_tag as t2 on t1.tag_id = t2.id') -> where("t1.company_id = {$row['cid']}") -> select();
+            $row['tag'] = $company_tag;
+            // $row['create_time'] = (integer)((time() - $row['create_time'])/(8440));
+            $row['create_time'] = mt_rand(1,20);
+            $msg_hot[] = $row;
+        }
+        $this->assign('msg_hot',$msg_hot); 
+        //底部网站链接数据
+        
+        $this->display();
+    }
+
+
+}
+

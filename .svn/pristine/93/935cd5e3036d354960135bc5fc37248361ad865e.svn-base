@@ -1,0 +1,227 @@
+<?php
+/**
+ * Created by Seven.
+ * Date: 2017/10/11
+ * Time: 10:45
+ */
+
+namespace Home\Controller;
+
+use Think\Controller;
+use Think\Upload;
+
+class CompanyController extends Controller
+{
+    public function index()
+    {
+        $model1 = M('Company');
+        $model2 = M('Trade');
+        $model3 = M('Company_stage');
+        //$model4 = M('Job');
+        $data   = $model1->limit(15)->select();
+        $trade  = $model2->select();
+        $stage  = $model3->select();
+        //$job    = $model4->select();
+        //$j    = $model4->where($data['id']=$job['company_id'])->select();
+        //dump($j);die;
+        //条数有问题
+        //$model=D('Company');
+        //$data = $model -> alias('c') -> join('left join lg_job as j on c.id = j.company_id')->where('c.id=j.company_id') ->limit(15)->select();
+
+
+        //dump($data);die;
+        $this->assign('data', $data);
+        $this->assign('trade', $trade);
+        $this->assign('stage', $stage);
+        //dump($data);die;
+        $this->display();
+    }
+
+    //公司认证
+    public function auth(){
+        $this->display();
+    }
+
+
+    //公司认证2步骤
+    public function bindStep1(){
+        $data=I('post.');
+        //static $cmp=array();
+        if(IS_POST) {
+            if($data['yanzheng'] == 1){
+                session('data',$data);
+                //dump(session());die;
+            }
+            redirect('bindStep2');
+
+            //success(null, U('Home/Company/bindStep2'));
+        }else{
+
+            $this->display();
+        }
+    }
+
+    public function bindStep2(){
+        //dump(session());die;
+        //$cmpname=I('post.');
+        if(IS_POST){
+
+            $data = session('data');
+            $data['name']=I('post.companyName');
+            //$this->display('bindStep3');
+            session('data',$data);
+            //dump(session());die;
+
+            $model=M('Company');
+            $data=session("data");
+            //dump($data);die;
+            $res=$model->add($data);
+            if(!$res){
+                redirect('bindStep2');
+                //$this->success('发送成功', U('Home/company/bindStep3'));
+            }else{
+
+                redirect('bindStep3');
+            }
+
+        }else{
+
+            $this->display('bindStep2');
+        }
+    }
+
+    //备份
+
+    //公司招聘信息详情
+
+    //public function showCompany(){
+    //    $id=I('get.id');
+    //    //dump($id);
+    //    $model=M('Company');
+    //    $data = $model -> alias('c') -> join('right join lg_job as j on c.id = j.company_id')->where(['j.company_id'=> $id ] )->limit(15)->select();
+    //    $data['con']=count($data);
+    //    //$data = $model->where($id)->find();
+    //
+    //
+    //    //foreach($data as $k=> $v){
+    //    //    $data['desc']=$v['desc'];
+    //    //    $data=$v;
+    //    //    //dump($data);
+    //    //}
+    //
+    //    dump($data);die;
+    //    $this->assign('data',$data);
+    //    $this->display();
+    //}
+
+    
+    //公司详情--招聘信息
+    public function showCompany(){
+        $id=I('get.id');
+        //dump($id);
+        $model=D('Company');
+        //查询公司详细信息
+        $cmp=$model->where(['id'=>$id])->select();
+        //联表查询公司tag标签
+        $ctag=$model
+            ->alias('c')
+            ->join('left join lg_company_tag as cmpid on c.id = cmpid.company_id left join lg_tag as tagid  on cmpid.tag_id = tagid.id ')
+            ->where(['c.id'=>$id])
+            ->field('tagid.name')
+            ->select();
+        //dump($ctag);die;
+
+        //查询公司所有在招职位
+        $model1=M('Job');
+        $cjob = $model1->where(['company_id' => $id])->select();
+        //统计在招职位数量
+        $c=count($cjob);
+        //dump($c);die;
+
+        //dump($cmp);die;
+        //$data = $model -> alias('c') -> join('left join lg_job as j on c.id = j.company_id')->field('desc')->where(['j.company_id'=> $id ] )->select();
+        //$data['con']=count($data);
+        //$data = $model->where($id)->find();
+        //foreach($data as $k=> $v){
+        //    $data['desc']=$v['desc'];
+        //    $data=$v;
+        //    //dump($data);
+        //}
+        //dump($data);die;
+        //绑定公司详情信息--招聘职位信息
+        $this->assign('cmp',$cmp);
+        //绑定公司所有在招职位
+        $this->assign('cjob',$cjob);
+        //绑定公司所有在招职位个数
+        $this->assign('c',$c);
+        //绑定公司tag标签
+        $this->assign('ctag',$ctag);
+        $this->display();
+    }
+    
+    
+    //公司招聘职位信息-详情
+    public function jobInfo(){
+        
+        $id=I('get.id');
+        $cid=I('get.cid');
+        //dump($cid);die;
+        $model=D('Job');
+        $job_info = $model->where(['id' => $id])->select();
+        //根据招聘信息company_id获取对应公司信息
+        $cmp_model=D('Company');
+        $cmp_info=$cmp_model->where(['id'=>$cid])->select();
+
+        //dump($data);die;
+        $this->assign('cmp_info',$cmp_info);
+        $this->assign('job_info',$job_info);
+        $this->display();
+    }
+    
+
+    //上传公司营业执照方法
+    public function uploadFile(){
+
+        //上传图片存到session里
+
+        //上传文件
+        if($_FILES['file']['error']=='0'){
+            //定义配置
+            $cfg=[
+                //保存根路径
+                'rootPath'  =>  './Public/Uploads/',
+            ];
+            //dump($cfg);die;
+            $upload = new Upload($cfg);
+            $info=$upload->uploadOne($_FILES['file']);
+            //dump($info);die;
+            //判断操作结果
+            if($info){
+                //返回成功信息
+                $response=[
+                    'code' => '0',
+                    'message' => '上传成功!',
+                    //'path' => $cfg['rootPath'],
+                    'path'=>$upload->rootPath.$info['savepath'].$info['savename'],
+                ];
+            }else{
+                //返回错误信息
+                $response = [
+                    'code' => '1',
+                    'message' => $upload->getError(),
+                ];
+            }
+            //ajax输出
+            $this->ajaxReturn($response);
+        }
+    }
+
+
+    //public function tag(){
+    //    $this->display();
+    //}
+
+
+    
+    
+}

@@ -1,0 +1,76 @@
+<form action="__CONTROLLER__/edit" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="username"value="{$data.id}"/>
+<div class="modal-header no-padding">
+    <div class="table-header">
+        <i class="icon-lock"></i>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        修改管理员资料
+    </div>
+</div>
+
+<div class="modal-body overflow-visible">
+    <div class="control-group">
+        <label class="control-label">用户名</label>
+        <div class="controls">
+            <input type="text" required="required" value="{$data.username}" name="username" id="username" placeholder="用户名" maxlength="10"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">头像</label>
+        <div class="controls">
+            <img src="{$data.image}" style="width:32px;height:32px;" class="avatar"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <input type="file" value="{}" name="image" id="avatar-file" style="width:100px;"/>
+        </div>
+    </div>
+
+    <div class="control-group" <if condition=" $data.id == 1"> style="display: none;" </if>>
+    <label class="control-label" for="gid">角色</label>
+    <div class="controls">
+        <select name="gid" id="gid">
+            <option value="1" <if condition=" $data.gid eq 1 ">selected="selected"</if>>管理员</option>
+            <option value="2" <if condition=" $data.gid eq 2 ">selected="selected"</if>>编辑</option>
+            <option value="3" <if condition=" $data.gid eq 3 ">selected="selected"</if>>客服</option>
+        </select>
+    </div>
+    </div>
+
+    <!--<div class="control-group">-->
+    <!--<label class="control-label" for="status">状态</label>-->
+    <!--<div class="controls">-->
+        <!--<select name="status"id="status">-->
+            <!--<option value="1" <if condition=" $data.status eq 1 ">selected="selected"</if>>启用</option>-->
+            <!--<option value="0" <if condition=" $data.status eq 0 ">selected="selected"</if>>禁用</option>-->
+        <!--</select>-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="control-group" <if condition=" $data.id == 1"> style="display: none;" </if>>
+        <label class="control-label" for="gid">状态</label>
+        <div class="controls">
+            <label>
+                <input type="checkbox" class="ace ace-switch" name="status" value="1" <if condition=" $data.status eq 1 ">checked="checked"</if>>
+                <span class="lbl"></span>
+            </label>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal-footer">
+    <input type="hidden" name="id" value="{$data.id}" id="hidden-userid"/>
+    <button data-dismiss="modal" class="btn btn-small">
+        <i class="icon-remove"></i>
+        取消
+    </button>
+    <button type="submit" class="btn btn-small btn-primary">
+        <i class="icon-ok"></i>修改
+    </button>
+</div>
+
+<script type="text/javascript" src="__PUBLIC__/HomeStyle/js/ajaxfileupload.js"></script>
+</form>

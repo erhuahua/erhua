@@ -1,0 +1,129 @@
+<?php
+//声明命名空间
+namespace Admin\Controller;
+//引入控制器父类
+use Think\Controller;
+//定义当前控制器类
+class UserController extends CommonController{
+
+//    public function index2(){
+//        $data = D('Users');
+//        //获取users表的总记录数
+//        $total = $data -> count();
+//        //设置每页显示的记录数
+//        $pagesize =15;
+//        //实例化TP的分页类
+//        $page = new \Think\Page($total, $pagesize);
+//        //设置分页栏的显示
+//        $page -> setConfig('prev','上一页');
+//        $page -> setConfig('next','下一页');
+//        $page -> setConfig('first','首页');
+//        $page -> setConfig('last','尾页');
+//        $page -> setConfig('theme','%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% %HEADER%');
+//        $page -> rollPage = 15;//分页栏的栏目数
+//        $page ->lastSuffix=true;
+//        //调用show方法获取分页栏代码
+//        $page_html =$page -> show();
+//        $this-> assign('page_html',$page_html);
+//        //查询数据
+//        $model =$data -> limit($page -> firstRow, $page -> listRows) -> select();
+//        //变量赋值
+//        $this-> assign('model',$model);
+//        $this-> display();
+//    }
+    //用户列表显示
+    public function index(){
+        $data =D('Users')->select();
+        $this->assign('data',$data);
+        $this->display();
+
+    }
+
+   //展示修改方法的页面
+    public function edit(){
+            $id = I('get.id');
+            $info = D('Users')->where(['id' => $id])->find();
+
+            $this->assign('info', $info);
+            $this->display();
+        }
+    //修改方法
+    public function doedit(){
+        if(IS_AJAX){
+            //接收数据
+            $data=I('post.');
+            $model=D('Users');
+            $res= $model ->save($data);
+            if($res !== false){
+                //修改成功
+                $msg['code'] = 1;
+                $msg['msg'] = '修改成功';
+            }else{
+                //失败
+                $msg['code'] = 0;
+                $msg['msg'] = '修改失败';
+            }
+            $this->ajaxReturn($msg);
+        }
+    }
+
+
+
+//    public function search(){
+//        $keyword = I('post.search');
+//        $model=D('Users');
+//        $map['username']  = array('like','%'.$keyword.'%');
+//
+//        if($res=$model->where($map)->select())
+//        {
+//            $this->ajaxReturn($res,'查询成功!',1);
+//        }else{
+//            $this->ajaxReturn($data,"查询失败,数据不存在！",0);
+//        }
+//
+//    }
+
+    //用户禁用
+    public function deny(){
+        //接收数据
+           $data=I('get.');
+           $res = D('Users') -> where(array(['id'=> $data['id']])) ->find();
+           if($res !== false){
+              $data['state'] =-1;
+               $qes=D('Users') -> save($data);
+               if($qes !== false){
+                   $msg['code'] = 1;
+                   $msg['msg'] = '禁用成功';
+
+               }else{
+                   $msg['code'] = 0;
+                   $msg['msg'] = '操作失败';
+               }
+               $this->ajaxReturn($msg);
+           }else{
+               $this ->error('数据操作失败');
+           }
+    }
+
+    //用户启用
+    public function receive(){
+        //接收数据
+        $data=I('get.');
+        $res = D('Users') -> where(array(['id'=> $data['id']])) ->find();
+        if($res !== false){
+            $data['state'] =1;
+            $qes=D('Users') -> save($data);
+            if($qes !== false){
+                $msg['code'] = 1;
+                $msg['msg'] = '启用成功';
+
+            }else{
+                $msg['code'] = 0;
+                $msg['msg'] = '操作失败';
+            }
+            $this->ajaxReturn($msg);
+        }else{
+            $this ->error('数据操作失败');
+        }
+    }
+}

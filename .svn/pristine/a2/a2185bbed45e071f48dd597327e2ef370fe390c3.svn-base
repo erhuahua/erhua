@@ -1,0 +1,74 @@
+<?php
+/**
+ * Created by Seven.
+ * Date: 2017/10/11
+ * Time: 10:45
+ */
+
+namespace Home\Controller;
+
+use Think\Controller;
+use Think\Upload;
+
+class CompanyController extends Controller
+{
+
+
+    //发布招聘信息
+    public function create(){
+        if(IS_POST){
+            $data = I('post.');
+            // var_dump($data);die;
+            $model = D('job');
+            // if($data['address'] == ''){
+            //     $arr = [
+            //         'code'  => 10010,
+            //         'msg'   => '地址不能为空'
+            //     ];
+            //     $this -> ajaxReturn($arr);
+            // }
+            $res = $model -> add($data);
+            if( !$res ){
+                $arr = [
+                    'code'  => 1001,
+                    'msg'   => '创建失败'
+                ];
+                $this -> ajaxReturn($arr);
+            }else{
+                $arr = [
+                    'code'  => 1002,
+                    'msg'   => '创建成功'
+                ];
+                $this -> ajaxReturn($arr);
+            }
+        }else{
+        $this -> display();
+        }
+    }
+
+    //待处理简历
+    public function waitResumes(){
+        $this -> display();
+    }
+    
+    //待定简历
+    public function canInterviewResumes(){
+        $this -> display();
+    }
+
+    //不合适简历
+    public function haveRefuseResumes(){
+        $this -> display();
+    }
+
+     //有效职位
+    public function positions(){
+        $this -> display();
+    }
+
+    //自动过滤简历
+    public function autoFilterResumes(){
+        $this -> display();
+    }
+    
+}

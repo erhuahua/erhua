@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>运营管理平台 - 拉勾网</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- 必须的css -->
+		<link href="__PUBLIC__/Admin/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="__PUBLIC__/Admin/css/bootstrap-responsive.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="__PUBLIC__/Admin/css/font-awesome.min.css" />
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="__PUBLIC__/Admin/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="__PUBLIC__/Admin/css/ace-fonts.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Admin/css/jquery-ui-1.10.3.full.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Admin/css/ace.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Admin/css/ace-responsive.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Admin/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/Admin/css/lagou.admin.css" />
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="__PUBLIC__/Admin/css/ace-ie.min.css" />
+		<![endif]-->
+        <link rel="stylesheet" href="__PUBLIC__/Admin/css/bootstrap-timepicker.css" />
+        <link rel="stylesheet" href="__PUBLIC__/Admin/css/datepicker.css" />
+        <link rel="stylesheet" href="__PUBLIC__/Admin/css/lagou.global.css" />
+		<!-- /必须的css -->
+		
+		
+		<script src="__PUBLIC__/Admin/js/ace-extra.min.js"></script>
+	</head>
+
+	<body>
+	<include file="Common/header" />
+					
+<div class="row-fluid">
+	<!--<h3 class="header blue lighter smaller">-->
+		<!--<form action="/admin/company/index.html" method="get">-->
+		<!--<div class="row-fluid  dataTables_wrapper">-->
+			<!--<div class="span12" id="m_search_div">-->
+				<!--<button type="submit" class="btn btn-primary btn-small pull-right" id="search_submit"><i class="icon-ok bigger-110"></i>搜索</button>-->
+				<!--<input name="name" value="" type="text" id="search_name" class="pull-right" placeholder="用户名"/>-->
+				<!--<label class="control-label pull-right">公司名：</label>-->
+			<!--</div>	-->
+		<!--</div>-->
+		<!--</form>-->
+	<!--</h3>-->
+	<div class="table-header">公司信息列表</div>
+	<table id="data_table" class="table table-striped table-bordered table-hover" style="margin-bottom:0px;">
+		<thead>
+			<tr>
+				<th class="center" width="5%">
+					<label>
+						<input type="checkbox" class="ace" />
+						<span class="lbl"></span>
+					</label>
+				</th>
+				<th width="6%">公司LOGO</th>
+				<th width="15%">公司名称(简称)</th>
+				<th>一句话介绍</th>
+				<th>职位</th>
+				<th width="6%">状态</th>
+				<th width="8%">操作</th>
+			</tr>
+		</thead>
+
+		<tbody>
+		<volist name="data" key="k" id="v">
+							<tr>
+					<td class="center">
+						<label>
+							<input type="checkbox" class="ace" />
+							<span class="lbl"></span>
+						</label>
+					</td>
+					<td>
+						<span data-original-title="{$v.name}" data-rel="popover" class="tooltip-info" data-content="电话：{$v.tel}<br/>邮箱：{$v.email}<br/>公司领域：<b class='orange'>{$v.trade}</b><br/>公司网站：<a href='{$v.web}' target='_blank'>{$v.web}</a><br/>所在城市：{$v.city}<br/>规模人数：{$v.scale}<br/>发展阶段：{$v.stage}<br/>公司描述：{$v.desc}<br/>一句话：{$v.one_desc}">
+														<img src="{$v.logo}" style="width:45px;height:45px;cursor:pointer;">
+						</span>
+					</td>
+					<td><a href="/Home/Index/showcompany/id/{$v.id}" target="_blank">{$v.name}【{$v.short_name}】</a></td>
+					<td>{$v.one_desc}</td>
+					<td><a href="__MODULE__/CompanyJob/index/id/{$v.id}" class="btn btn-mini btn-success">点击查看职位</a></td>
+					<td>
+						<if condition= " ($v.state eq 1) " >正常
+							<elseif condition= " ($v.state eq 0) " />
+							禁用
+							<elseif condition= " ($v.state eq -1) " />
+							未验证
+							<elseif condition= " ($v.state eq 2) " />
+							未认证
+							<elseif condition= " ($v.state eq 3) " />
+							正在申请认证
+							<else />
+							错误
+						</if>
+					</td>
+					<td>
+
+						<div class="hidden-phone visible-desktop action-buttons">
+							<if condition=" $v.state == 1 ">
+							<a href="javascript:;" class="red tooltip-info no-hover-underline" data-rel="tooltip" data-original-title="禁用" onclick="$.del('__CONTROLLER__/deny/id/{$v.id}');">
+									<i class="icon-legal bigger-130"></i>
+								</a>
+								<elseif condition=" $v.state neq 1 " />
+
+								<a href="javascript:;" class="blue tooltip-info no-hover-underline" data-rel="tooltip" data-original-title="启用" onclick="$.off('__CONTROLLER__/receive/id/{$v.id}');">
+									<i class="icon-globe bigger-130"></i>
+								</a>
+								</if>
+
+						</div>
+					</td>
+				</tr>
+		</volist>
+		</tbody>
+	</table>
+	<!-- 分页 -->
+	<!--<div class="row-fluid">-->
+		<!--<div class="page"><div>  <span class="current">1</span><a class="num" href="/admin/company/index/p/2.html">2</a><a class="num" href="/admin/company/index/p/3.html">3</a><a class="num" href="/admin/company/index/p/4.html">4</a> <a class="next" href="/admin/company/index/p/2.html">>></a> </div></div>-->
+	<!--</div>-->
+</div>
+
+				</div><!--/.page-content-->
+
+				<!-- 右侧悬浮的设置按钮,去掉好像会引起js报错 -->
+				<div class="ace-settings-container hide" id="ace-settings-container">
+					<div class="btn btn-app btn-mini btn-warning ace-settings-btn" id="ace-settings-btn">
+						<i class="icon-cog bigger-150"></i>
+					</div>
+
+					<div class="ace-settings-box" id="ace-settings-box">
+						<div>
+							<div class="pull-left">
+								<select id="skin-colorpicker" class="hide">
+									<option data-skin="default" value="#438EB9">#438EB9</option>
+									<option data-skin="skin-1" value="#222A2D">#222A2D</option>
+									<option data-skin="skin-2" value="#C6487E">#C6487E</option>
+									<option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+								</select>
+							</div>
+							<span>&nbsp; Choose Skin</span>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-navbar" />
+							<label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-sidebar" />
+							<label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-breadcrumbs" />
+							<label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+						</div>
+
+						<div>
+							<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" />
+							<label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+						</div>
+					</div>
+				</div>
+				<!-- /右侧悬浮的设置按钮,去掉好像会引起js报错 -->
+			</div>
+		</div>
+
+		<!-- 回到顶部 -->
+		<a href="###" id="btn-scroll-up" class="btn-scroll-up btn btn-small btn-inverse">
+			<i class="icon-double-angle-up icon-only bigger-110"></i>
+		</a>
+		<!-- /回到顶部 -->
+
+		<!-- 操作后提示框 -->
+		<div id="lg-alert" class="hide" style="margin-bottom:-1.5em;"></div>
+		<!--modal表单弹出框-->
+		<form id="lg-form" class="modal fade hide form-horizontal" method="post" tabindex="-1" enctype="multipart/form-data" onsubmit="return false;"></form>
+
+		<!-- 基础js部分 -->
+		<script src='__PUBLIC__/Admin/js/jquery-1.10.2.min.js'></script>
+		<script src='__PUBLIC__/Admin/js/jquery.mobile.custom.min.js'></script>
+		
+		<script src="__PUBLIC__/Admin/js/jquery-ui-1.10.3.full.min.js"></script>
+		<script src="__PUBLIC__/Admin/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="__PUBLIC__/Admin/js/bootstrap.min.js"></script>
+		<script src="__PUBLIC__/Admin/js/ace-elements.min.js"></script>
+		<script src="__PUBLIC__/Admin/js/ace.min.js"></script>
+		
+		<script src="__PUBLIC__/Admin/js/jquery.dataTables.min.js"></script>
+		<script src="__PUBLIC__/Admin/js/jquery.dataTables.bootstrap.js"></script>
+		<script src="__PUBLIC__/Admin/lagou/lagou.global.js"></script>
+		<script src="__PUBLIC__/Admin/js/jquery.inputlimiter.1.3.1.min.js"></script>
+	    <script src="__PUBLIC__/Admin/js/datatable/jquery.dataTables.min.js"></script>
+
+		<!-- /基础js部分 -->
+		<script type="text/javascript">
+		jQuery(function($){
+			try{
+				ace.settings.navbar_fixed(true);
+				ace.settings.sidebar_fixed(true);
+				ace.settings.breadcrumbs_fixed(true);
+			}catch(e){}
+			
+			$('[data-rel=tooltip]').tooltip();
+			$('[data-rel=popover]').popover({html:true});
+
+		});	
+		</script>
+		
+
+		
+		
+	<script type="text/javascript">
+			jQuery(function($) {
+
+				// 这就是全选按钮
+				$('table th input:checkbox').on('click' , function(){
+					var that = this;
+					$(this).closest('table').find('tr > td:first-child input:checkbox')
+					.each(function(){
+						this.checked = that.checked;
+						$(this).closest('tr').toggleClass('selected');
+					});	
+				});
+
+
+				$.extend({
+
+					del : function(url)
+					{
+						$.lagou.confirm('确认执行禁用操作么？', function(res){
+							if (res) {
+								if (res) {
+									$.ajax({
+										url :url,
+										type : 'get',
+										success : function(res)
+										{
+											$.lagou.alert(res.msg, res.code, 2);
+											location.reload();
+										}
+									});
+								}
+							}
+						});
+					},
+
+					off : function(url)
+					{
+						$.lagou.confirm('确认执行启用操作么？', function(res){
+							if (res) {
+								if (res) {
+									$.ajax({
+										url :url,
+										type : 'get',
+										success : function(res)
+										{
+											$.lagou.alert(res.msg, res.code, 2);
+											location.reload();
+										}
+									});
+								}
+							}
+						});
+					}
+
+				});
+			
+			})
+		</script>
+
+	<script>
+		$(function(){
+			//datatables实例化
+			$('table').dataTable({
+				aoColumnDefs: [ { "bSortable": false, "aTargets": [ 0,1,2,3,4,5,6 ] }],
+				"oLanguage": {
+					"sLengthMenu": "每页显示 _MENU_ 条记录",
+					"sZeroRecords": "抱歉， 没有找到",
+					"sInfo": "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",
+					"sInfoEmpty": "没有数据",
+					"sInfoFiltered": "(从 _MAX_ 条数据中检索)",
+					"oPaginate": {
+						"sFirst": "首页",
+						"sPrevious": "前一页",
+						"sNext": "后一页",
+						"sLast": "尾页"
+					},
+					"sZeroRecords": "没有检索到数据",
+				},
+
+
+
+			});
+		});
+
+	</script>
+	</body>
+</html>

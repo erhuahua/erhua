@@ -1,0 +1,58 @@
+<?php 
+namespace Home\Controller;
+use Think\Controller;
+class UserController extends Controller{
+	public function aa(){
+		echo 'success';
+	}
+
+	//注册页面
+	public function register(){
+			if(IS_POST){
+			//处理表单提交
+			$data = I('post.');
+			$email = $data['username'];
+			$model = D('Users');
+			// $create = $model -> create($data);
+			// if(!$create){
+			// 	$error = $model -> getError();
+			// 	$this -> ajaxRetun($error);
+			// }
+			$sql = $model-> where(['username' => $email]) -> find();
+			// var_dump($sql);die;
+			if($sql){
+				$arr = [
+					'code'	=> 103,
+					'msg'	=> '用户名已存在'
+				];
+				$this -> ajaxReturn($arr);
+			}
+			$res = $model -> add($data);
+			if($res){
+				$arr = [
+					'code' => 100,
+					'msg'  => 'success'
+				];
+				//注册成功
+				$this -> ajaxReturn($arr);
+			}else{
+				$arr = [
+					'code' => 101,
+					'msg'  => '失败'
+				];
+				//注册失败
+				$this -> ajaxReturn($arr);
+			}
+		}else{
+			$this -> display();
+		}
+	}
+	//登录首页
+	public function login(){		
+		$this -> display();
+	}
+  
+
+}
+
+ ?>
